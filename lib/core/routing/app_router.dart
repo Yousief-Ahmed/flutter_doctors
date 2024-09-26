@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_doctors/core/routing/routes.dart';
 import 'package:flutter_doctors/features/onboarding/onboarding_screen.dart';
-import 'package:flutter_doctors/features/ui/login_screen.dart';
+import 'package:flutter_doctors/features/login/ui/login_screen.dart';
 
 class AppRouter {
   Route generateRoute (RouteSettings settings){
