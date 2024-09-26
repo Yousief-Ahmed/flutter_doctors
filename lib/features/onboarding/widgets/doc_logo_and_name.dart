@@ -14,7 +14,7 @@ class DocLogoAndName extends StatelessWidget {
         SvgPicture.asset('assets/svgs/docdoc_logo.svg'),
         SizedBox(width: 10.w,),
         Text("DocDoc",
-          style: TextStyles.font24Blcak700weight,
+          style: TextStyles.font24BlackBold,
         ),
       ],
     );
