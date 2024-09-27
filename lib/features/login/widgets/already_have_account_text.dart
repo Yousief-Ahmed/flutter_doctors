@@ -4,6 +4,7 @@ import 'package:flutter_doctors/core/theming/styles.dart';
 class AlreadyHaveAccountText extends StatelessWidget {
   const AlreadyHaveAccountText({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return RichText(
