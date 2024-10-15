@@ -7,6 +7,8 @@ import 'package:flutter_doctors/features/home/ui/home_screen.dart';
 import 'package:flutter_doctors/features/login/logic/login_cubit.dart';
 import 'package:flutter_doctors/features/onboarding/onboarding_screen.dart';
 import 'package:flutter_doctors/features/login/ui/login_screen.dart';
+import 'package:flutter_doctors/features/sign_up/logic/sign_up_cubit.dart';
+import 'package:flutter_doctors/features/sign_up/ui/sign_up_screen.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -21,6 +23,13 @@ class AppRouter {
                 create: (context) => getIt<LoginCubit>(),
                 child: const LoginScreen(),
               ),
+        );
+      case Routes.signupScreen :
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<SignupCubit>(),
+            child: const SignupScreen(),
+          ),
         );
       case Routes.homeScreen:
         return MaterialPageRoute(
